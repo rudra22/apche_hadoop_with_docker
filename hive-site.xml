@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<configuration>
+    <!-- Location of the Derby database for Hive Metastore -->
+    <property>
+        <name>javax.jdo.option.ConnectionURL</name>
+        <value>jdbc:derby:;databaseName=/opt/hive/metastore_db;create=true</value>
+    </property>
+
+    <property>
+        <name>javax.jdo.option.ConnectionDriverName</name>
+        <value>org.apache.derby.jdbc.EmbeddedDriver</value>
+    </property>
+
+    <!-- Warehouse directory for Hive tables -->
+    <property>
+        <name>hive.metastore.warehouse.dir</name>
+        <value>/opt/hive/warehouse</value>
+    </property>
+
+    <!-- Enable display of job progress -->
+    <property>
+        <name>hive.exec.verbose.progress</name>
+        <value>true</value>
+    </property>
+
+    <!-- (Optional) Set default # of reducers -->
+    <property>
+        <name>mapreduce.job.reduces</name>
+        <value>1</value>
+    </property>
+</configuration>
