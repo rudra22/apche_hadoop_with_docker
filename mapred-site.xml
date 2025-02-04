@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<configuration>
+    <!-- Use YARN as the framework for MapReduce -->
+    <property>
+        <name>mapreduce.framework.name</name>
+        <value>yarn</value>
+    </property>
+
+    <!-- MapReduce Job History server address (optional) -->
+    <property>
+        <name>mapreduce.jobhistory.address</name>
+        <value>localhost:10020</value>
+    </property>
+
+    <!-- Job History Web UI port (optional) -->
+    <property>
+        <name>mapreduce.jobhistory.webapp.address</name>
+        <value>0.0.0.0:19888</value>
+    </property>
+</configuration>
