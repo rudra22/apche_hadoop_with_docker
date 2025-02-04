@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<configuration>
+    <!-- Store HBase data on local filesystem -->
+    <property>
+        <name>hbase.rootdir</name>
+        <value>file:///opt/hbase/data</value>
+    </property>
+
+    <!-- Zookeeper data directory -->
+    <property>
+        <name>hbase.zookeeper.property.dataDir</name>
+        <value>/opt/hbase/zk_data</value>
+    </property>
+
+    <!-- (Optional) Disable stream capability enforcement for local testing -->
+    <property>
+        <name>hbase.unsafe.stream.capability.enforce</name>
+        <value>false</value>
+    </property>
+
+    <!-- Listen on all network interfaces (for container usage) -->
+    <property>
+        <name>hbase.master.hostname</name>
+        <value>0.0.0.0</value>
+    </property>
+</configuration>
