@@ -1,0 +1,15 @@
+
+---
+
+# **Summary**
+
+1. **Single Dockerfile** that installs Hadoop, Hive, HBase, Oozie, and Hue.
+2. **Directory Layout** separating the main Dockerfile, config files, and scripts.
+3. **Scripts** to start services in a pseudo-distributed manner.
+
+Feel free to adapt this example to your needs. For real-world scenarios, consider:
+
+- Multi-container or multi-node setups.
+- Additional security and data-volume management.
+
+**Enjoy exploring your single-container Hadoop + Hue environment!** 
