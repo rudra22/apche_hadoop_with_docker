@@ -28,4 +28,13 @@
         <name>mapreduce.job.reduces</name>
         <value>1</value>
     </property>
+    
+    <property>
+        <name>datanucleus.autoCreateSchema</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>hive.metastore.uris</name>
+        <value>thrift://localhost:9083</value>
+    </property>
 </configuration>

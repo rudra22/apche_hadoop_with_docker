@@ -18,6 +18,12 @@
         <value>file:///opt/hadoop/data/datanode</value>
     </property>
 
+    <!-- Enable Namenode Web UI -->
+    <property>
+        <name>dfs.webhdfs.enabled</name>
+        <value>true</value>
+    </property>
+
     <!-- Web UI port (optional override) -->
     <property>
         <name>dfs.namenode.http-address</name>

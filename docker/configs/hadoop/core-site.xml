@@ -9,7 +9,7 @@
     <!-- (Optional) Hadoop temp directory -->
     <property>
         <name>hadoop.tmp.dir</name>
-        <value>/opt/hadoop/tmp</value>
+        <value>/tmp/hadoop-${user.name}</value>
     </property>
 
     <!-- (Optional) I/O File Buffer Size -->

@@ -29,4 +29,12 @@
         <name>yarn.nodemanager.env-whitelist</name>
         <value>JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_CONF_DIR,HADOOP_HDFS_HOME,HADOOP_HOME,HADOOP_YARN_HOME,HADOOP_MAPRED_HOME</value>
     </property>
+    <property>
+        <name>yarn.resourcemanager.resource_tracker.address</name>
+        <value>localhost:8025</value>
+    </property>
+    <property>
+        <name>yarn.resourcemanager.scheduler.address</name>
+        <value>localhost:8030</value>
+    </property>
 </configuration>
